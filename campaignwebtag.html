@@ -1,0 +1,30 @@
+campaignwebtag.html
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Center Test</title>
+</head>
+<body>
+  <button id="start-contact-center">
+    Start Contact Center
+  </button>
+
+  <div id="contact-center-container"></div>
+
+  <!-- Use the exact script and initialization code supplied by Zoom -->
+  <script src="ZOOM_CONTACT_CENTER_SDK_URL"></script>
+  <script type="module" src="https://us01ccistatic.zoom.us/us01cci/web-sdk/zcc-sdk.js" data-apikey="-TVebBpWR5uYVEQayRso9g" data-env="us01"></script>
+
+  <script>
+    document
+      .getElementById("start-contact-center")
+      .addEventListener("click", () => {
+        // Insert the Zoom-generated initialization code here.
+        // It should reference your flow's entry ID.
+      });
+  </script>
+</body>
+</html>
